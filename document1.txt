@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> // 포인터 실습 코드 작성
 
 void main() {
 	int i = 0;
