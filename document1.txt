@@ -1,1 +1,30 @@
-# document1
+#include <stdio.h>
+
+void main() {
+	int i = 0;
+	double d = 1.1;
+
+	int *pi = &i;
+	double *pd = &d;
+
+	printf("%p %p %p\n", pi + 0, pi + 1, pi + 2); //int형이면 4byte씩 증가
+	printf("%p %p %p\n", pd + 0, pd + 1, pd + 2); //double형이면 8byte씩 증가
+	/*
+	int arr1[] = { 10, 20, 30 };
+	int* parr1 = NULL;
+
+	parr1 = arr1;
+	//[] == *
+
+	for (int i = 0; i < 3; i++) {
+		*(arr1 + i) += 1; //포인터 연산
+		//포인터 연산 시 +1을 할 경우 4byte씩 증가한다.
+		//parr1[i] += 1;
+	}
+
+	for (int j = 0; j < 3; j++) {
+		printf("*(arr1 + %d) = %d\n", j, *(arr1 + j));
+		printf("parr[%d] = %d\n", j, parr1[j]);
+	*/
+	}
+}
